@@ -1,0 +1,69 @@
+:root {
+  --color-principal: #eee;
+  --fuente-principal: 'Roboto', sans-serif;
+  --fuente-secundaria: 'Open Sans', sans-serif;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-principal);
+  border-radius: 10px;
+  line-height: 1.8;
+}
+#title, #title-empresas {
+  font-size: 40px;
+  font-family: var(--fuente-principal);
+}
+#title{
+  margin-bottom: 0;
+}
+#title-empresas{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#tribute-info, #title-p, #frase, #img-caption, #empresas_fechas{
+  font-size: 25px;
+  font-family: var(--fuente-secundaria);
+}
+@media(max-width: 468px){
+  #title-p, #tribute-info, #title-empresas, #frase, #enlace{
+  margin-left: 10px;
+  }
+}
+#img-div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto 10px;
+}
+@media(max-width: 468px){
+  #img-div{
+  margin: auto 10px;
+  }
+}
+#image{
+  display: block;
+  max-width: 100%;
+}
+#enlace{
+  font-family: var(--fuente-principal);
+  font-size: 20px;
+  font-weight: bold;
+}
+#tribute-link{
+  color: black;
+}
+
+
+
